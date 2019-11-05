@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>scope</title>
+</head>
+<body>
+    <a href="/ejercicios/">go back</a>
+    <p> <em> abre la consola</em></p>
+
+    <script src="https://unpkg.com/jquery@3.3.1/dist/jquery.js"></script>
+    <script>
+     //global scope
+     //var message = " hello, platzi!"
+     //var $ = function(message) {
+     //    console.log('say:' + message)
+     //};
+
+     // function scope
+
+    //function primerNumero () {
+    //   var i;
+    //   for (i = 0; i < 10; i++) {
+    //       function eventuallyPrintNumber(n) {
+    //           setTimeout(function() {
+    //               console.log(n);
+    //           }, 100);
+    //       }
+    //   
+
+    //   eventuallyPrintNumber(i);
+    //   }
+    //}
+
+    //primerNumero();
+    
+        //block scope
+
+        function primerNumero () {
+        for ( let i = 0; i < 10; i++) {
+                setTimeout(function() {
+                    console.log(i);
+                }, 100);
+             }
+        }
+
+     primerNumero();
+
+    </script>
+
+</body>
+</html>

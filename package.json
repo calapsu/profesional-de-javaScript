@@ -1,0 +1,16 @@
+{
+  "name": "platzi-media-player",
+  "version": "1.0.0",
+  "description": "proyecto del curso profesional de javaScript de la escuela j",
+  "license": "MIT",
+  "author": "sebastian calapsu  carvajal <sebaxtian098@hotmail.com>",
+  "keywords": [
+    "platzi"
+  ],
+  "scripts": {
+    "start": "live-server"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  }
+}
