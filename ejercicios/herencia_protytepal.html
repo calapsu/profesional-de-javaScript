@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>prototype</title>
+</head>
+<body>
+    <a href="/ejercicios/">Go back</a>
+    <p><em>abre la consola</em></p>
+
+    <script>
+    function Hero(name) {
+       this.name = name;
+    }
+
+    Hero.prototype.saludar = function() {
+         console.log(`hola soy ${this.name}`);
+     };
+
+     const zelda = new Hero('zelda');
+
+     //propiedades de la instanci
+
+     console.log('Name:', zelda.name);
+
+     //propiedades de la clase
+
+     console.log('saludar:', zelda.saludar);
+
+     //propiedades heredadas ej: tostring
+
+     console.log('toString:', zelda.toString);
+
+     // hasOwnProperty (de donde sale toString o esto?)
+
+     console.log('zelda.hasOwnProperty("name")', zelda.hasOwnProperty('saludar'))
+
+    </script>
+
+</body>
+</html>
