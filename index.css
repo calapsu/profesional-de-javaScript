@@ -74,3 +74,9 @@
   .ads__body {
     margin: 0;
   }
+
+  #muteButton {
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+  }
